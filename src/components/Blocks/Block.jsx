@@ -23,31 +23,15 @@ function valueToColor(value) {
 export class Block extends React.Component {
   constructor(props) {
     super(props)
-
-    const initialValue = 0
-    const initialColor = valueToColor(initialValue)
-
-    this.state = {
-      value: initialValue,
-      color: initialColor
-    }
-
-    this.incrementValue = this.incrementValue.bind(this)
-  }
-
-  incrementValue() {
-    const newValue = this.state.value + 1
-    const newColor = valueToColor(newValue)
-    this.setState({ value: newValue, color: newColor })
   }
 
   render() {
     return (
       <View
-        onTouchEndCapture={this.incrementValue}
-        style={{ ...styles.container, backgroundColor: this.state.color }}
+        onTouchEndCapture={this.props.onItemClick}
+        style={{ ...styles.container, backgroundColor: valueToColor(this.props.value) }}
       >
-        <Text>{this.state.value}</Text>
+        <Text>{this.props.value}</Text>
       </View>
     )
   }

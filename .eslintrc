@@ -25,6 +25,7 @@
   "rules": {
     "prettier/prettier": ["warn"],
     "no-unused-vars": "warn",
-    "no-console": "warn"
+    "no-console": "warn",
+    "react/prop-types": "off"
   }
 }
