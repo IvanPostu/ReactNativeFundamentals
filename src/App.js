@@ -6,7 +6,6 @@ const App = () => {
   return (
     <View style={styles.container}>
       <StatusBar />
-      {/* <Article /> */}
       <Blocks />
     </View>
   )

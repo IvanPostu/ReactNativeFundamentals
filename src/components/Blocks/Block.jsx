@@ -1,13 +1,23 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
+const CONSTANT_COLORS = [
+  '#eccc68',
+  '#ffa502',
+  '#7bed9f',
+  '#2ed573',
+  '#1e90ff',
+  '#3742fa',
+  '#ffffff',
+  '#ff4757',
+  '#a4b0be',
+  '#D980FA'
+]
+
 function valueToColor(value) {
-  if (value % 2 === 0) {
-    return '#ffa502'
-  }
-  if (value % 2 === 1) {
-    return '#7bed9f'
-  }
+  const colorIndex = value % 10
+
+  return CONSTANT_COLORS[colorIndex]
 }
 
 export class Block extends React.Component {
@@ -34,7 +44,7 @@ export class Block extends React.Component {
   render() {
     return (
       <View
-        onTouchStart={this.incrementValue}
+        onTouchEndCapture={this.incrementValue}
         style={{ ...styles.container, backgroundColor: this.state.color }}
       >
         <Text>{this.state.value}</Text>

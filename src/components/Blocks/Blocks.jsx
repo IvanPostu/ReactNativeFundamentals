@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, StyleSheet, Button } from 'react-native'
+import { View, StyleSheet, Button, ScrollView } from 'react-native'
 import { Block } from './Block'
 
 export class Blocks extends React.Component {
@@ -13,8 +13,40 @@ export class Blocks extends React.Component {
 
   render() {
     return (
-      <View>
-        <View style={{ ...styles.container, display: this.state.tableIsShowed ? 'flex' : 'none' }}>
+      <ScrollView style={styles.container}>
+        <View style={{ ...styles.blocks, display: this.state.tableIsShowed ? 'flex' : 'none' }}>
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
+          <Block />
           <Block />
           <Block />
           <Block />
@@ -41,17 +73,24 @@ export class Blocks extends React.Component {
           <Block />
           <Block />
         </View>
-        <Button
-          title={this.state.tableIsShowed ? 'Hide' : 'Show'}
-          onPress={() => this.setState({ tableIsShowed: !this.state.tableIsShowed })}
-        />
-      </View>
+        {/* <View style={{ alignItems: 'center' }}> */}
+        <View style={buttonContainer} tra>
+          <Button
+            title={this.state.tableIsShowed ? 'Hide' : 'Show'}
+            onPress={() => this.setState({ tableIsShowed: !this.state.tableIsShowed })}
+          />
+        </View>
+        {/* </View> */}
+      </ScrollView>
     )
   }
 }
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: '#1B1464'
+  },
+  blocks: {
     overflow: 'hidden',
     backgroundColor: 'yellow',
     flexWrap: 'wrap',
@@ -59,3 +98,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   }
 })
+
+const buttonContainer = {
+  width: 200,
+  alignSelf: 'center'
+}
