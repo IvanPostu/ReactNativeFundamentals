@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, View, StatusBar } from 'react-native'
-import { Blocks } from '@/components/Blocks/Blocks'
+import { Blocks } from './components/Blocks/Blocks'
 
 const App = () => {
   return (

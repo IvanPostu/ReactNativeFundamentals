@@ -1,20 +1,19 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
-const CONSTANT_COLORS = [
-  '#eccc68',
-  '#ffa502',
-  '#7bed9f',
-  '#2ed573',
-  '#1e90ff',
-  '#3742fa',
-  '#ffffff',
-  '#ff4757',
-  '#a4b0be',
-  '#D980FA'
-]
-
 function valueToColor(value) {
+  const CONSTANT_COLORS = [
+    '#eccc68',
+    '#ffa502',
+    '#7bed9f',
+    '#2ed573',
+    '#1e90ff',
+    '#3742fa',
+    '#ffffff',
+    '#ff4757',
+    '#a4b0be',
+    '#D980FA'
+  ]
   const colorIndex = value % 10
 
   return CONSTANT_COLORS[colorIndex]
