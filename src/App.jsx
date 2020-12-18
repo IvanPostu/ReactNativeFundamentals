@@ -17,8 +17,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     justifyContent: 'space-between',
     flexDirection: 'column',
-    width: '100%'
-  }
+    width: '100%',
+  },
 })
 
 export default App

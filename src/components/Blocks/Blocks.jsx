@@ -11,13 +11,13 @@ export class Blocks extends React.Component {
     const initialItems = []
     for (let i = 0; i < ITEMS_COUNT; i++) {
       initialItems.push({
-        value: 0
+        value: 0,
       })
     }
 
     this.state = {
       tableIsShowed: true,
-      items: initialItems
+      items: initialItems,
     }
 
     this.onItemClick = this.onItemClick.bind(this)
@@ -33,7 +33,7 @@ export class Blocks extends React.Component {
     })
 
     this.setState({
-      items: newItems
+      items: newItems,
     })
   }
 
@@ -60,18 +60,18 @@ export class Blocks extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#1B1464'
+    backgroundColor: '#1B1464',
   },
   blocks: {
     overflow: 'hidden',
     backgroundColor: '#006266',
     flexWrap: 'wrap',
     flexDirection: 'row',
-    justifyContent: 'center'
-  }
+    justifyContent: 'center',
+  },
 })
 
 const buttonContainer = {
   width: 200,
-  alignSelf: 'center'
+  alignSelf: 'center',
 }

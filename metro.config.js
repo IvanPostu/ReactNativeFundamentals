@@ -8,14 +8,15 @@
 module.exports = {
   resolver: {
     /* resolver options */
-    sourceExts: ['jsx', 'js'] //add here
+    sourceExts: ['jsx', 'js'], //add here
   },
+
   transformer: {
     getTransformOptions: async () => ({
       transform: {
         experimentalImportSupport: false,
-        inlineRequires: false
-      }
-    })
-  }
+        inlineRequires: false,
+      },
+    }),
+  },
 }
