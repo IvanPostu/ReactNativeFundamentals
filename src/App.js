@@ -1,14 +1,13 @@
 import React from 'react'
-import { StyleSheet, View, Text, StatusBar, Button } from 'react-native'
-import { Panel } from './components/Panel'
+import { StyleSheet, View, StatusBar } from 'react-native'
+import { Blocks } from '@/components/Blocks/Blocks'
 
 const App = () => {
   return (
     <View style={styles.container}>
       <StatusBar />
-      <Panel />
-      <Panel />
-      <Panel />
+      {/* <Article /> */}
+      <Blocks />
     </View>
   )
 }
@@ -16,8 +15,10 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#99ff11',
-    color: '#fff'
+    backgroundColor: '#fff',
+    justifyContent: 'space-between',
+    flexDirection: 'column',
+    width: '100%'
   }
 })
 
