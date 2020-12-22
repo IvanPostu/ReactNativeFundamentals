@@ -72,7 +72,7 @@
     "editor.cursorBlinking": "smooth",
     "editor.cursorStyle": "line",
     "editor.fontSize": 14,
-    "editor.fontFamily": "Fira Code SemiBold",
+    
     "editor.fontLigatures": true,
     "editor.formatOnPaste": false,
     "editor.formatOnType": false,
@@ -82,13 +82,13 @@
     "editor.detectIndentation": false,
     "editor.insertSpaces": true,
       "breadcrumbs.enabled": true,    
-    "terminal.integrated.fontFamily": "Fira Code Medium",
+   
     "terminal.integrated.fontSize": 10,
     "debug.console.fontSize": 10,
     "debug.console.lineHeight": 12,
-    "debug.console.fontFamily": "Fira Code Medium",
+ 
      "[Log]": {
-      "editor.fontFamily": "Fira Code Medium",
+     
       "editor.fontSize": 10,
       "editor.lineHeight": 13
     },
