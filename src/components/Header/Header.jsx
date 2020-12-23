@@ -1,7 +1,6 @@
 import React from 'react'
-import { View, StyleSheet, Text,  StatusBar } from 'react-native'
-import {ThreePoints} from '@/components/CustomIcons/ThreePoints'
-
+import { View, StyleSheet, Text, StatusBar } from 'react-native'
+import { ThreePoints } from '@/components/CustomIcons/ThreePoints'
 
 export class Header extends React.Component {
   constructor(props) {
@@ -13,7 +12,7 @@ export class Header extends React.Component {
       <View style={styles.container}>
         <StatusBar hidden={true} />
         <View style={styles.menuContainer}>
-          <View style={{width: 40}}/>
+          <View style={{ width: 40 }} />
           <Text style={styles.text}>Home</Text>
           <ThreePoints />
         </View>
