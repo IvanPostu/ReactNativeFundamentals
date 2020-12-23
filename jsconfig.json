@@ -6,19 +6,12 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./src/*"]
     }
   },
-  "include": [
-    "src/**/*",
-    "__tests__/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "public",
-    ".cache",
-    "dist"
-  ]
+  "include": ["src/**/*", "__tests__/**/*"],
+  "exclude": ["node_modules", "public", ".cache", "dist"],
+  "typeAcquisition": {
+    "include": ["jest"]
+  }
 }
