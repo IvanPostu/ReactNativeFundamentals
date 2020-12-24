@@ -14,6 +14,7 @@ export class Header extends React.Component {
         <View style={styles.menuContainer}>
           <View style={{ width: 40 }} />
           <Text style={styles.text}>Home</Text>
+          
           <ThreePoints />
         </View>
       </View>

@@ -16,6 +16,28 @@
  */
 
 describe('Testam tipurile de date in limbajul de programare JS', () => {
+ 
+ test ("abc", ()=>{
+  const sum =(a,b)=>{
+    const c=a+b
+    return c
+  }
+   const d=sum(20,12)
+  
+  console.log(d) 
+  expect(1).toBe(1)
+
+ })
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
   test('Testam tipurile de date primitive', () => {
     /**
      * Tipul de date primitiv: number
