@@ -2,7 +2,7 @@ import React from 'react'
 import { View } from 'react-native'
 import {SvgXml} from 'react-native-svg'
 
-export class AndroidIcons extends React.Component {
+export class AndroidIcon extends React.Component {
   constructor(props) {
     super(props)
   }

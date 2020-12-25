@@ -1,26 +1,44 @@
 import React from 'react'
-import { StyleSheet, View } from 'react-native'
-import { SmileIonIcon } from '@/components/CustomIcons/SmileIonIcon'
-import { DoctorMdIcon } from '@/components/CustomIcons/DoctorMdIcon'
-import {Airplane} from '@/components/CustomIcons/Airplane'
-import {AndroidIcons} from '@/components/CustomIcons/AndroidIcons'
-
+import { StyleSheet, View, Dimensions,ScrollView } from 'react-native'
+import { Menu } from '@/components/Menu/Menu'
 import { ButtonComponent } from '@/components/Button/ButtonComponent'
 import { Header } from '@/components/Header/Header'
+import { CustomTextInput } from '@/components/CustomTextInput/CustomTextInput'
 
 
 const App = () => {
   return (
     <View style={styles.container}>
-      
-      <Header />
-      <View style={{ marginHorizontal: 40 }}>
-        <ButtonComponent title={'VERY URGENT'} backgroundColor={'white'} textColor={'rgb(8,218,95)'} borderColor={'rgb(8,218,95)'} />
+
+      <View style={styles.block}>
+        <ScrollView>
+        <Header />
+        <View style={{ marginHorizontal: 40, marginVertical:20 }}>
+          <ButtonComponent title={'VERY URGENT'} backgroundColor={'white'} textColor={'rgb(8,218,95)'} borderColor={'rgb(8,218,95)'} />
+        </View>
+        <View style={{ marginHorizontal: 20}}>
+          <CustomTextInput title={'Name'} placeholder={'Your Name'} />
+        </View>
+        <View style={{ marginHorizontal: 20}}>
+          <CustomTextInput title={'Desease'} placeholder={'What is your illness'} />
+        </View>
+        <View style={{ marginHorizontal: 20}}>
+          <CustomTextInput title={'Location'} placeholder={'What is your location'} />
+        </View>
+        <View style={{ marginHorizontal: 20}}>
+          <CustomTextInput title={'Description (Optional)'} height={90} placeholder={'Describe Here'} />
+        </View>
+        <View style={{ marginHorizontal: 20, marginVertical:25 }}>
+          <ButtonComponent title={'Request'} />
+
+        </View>
+        </ScrollView>
       </View>
-      <View style={{ marginHorizontal: 20 }}>
-        <ButtonComponent title={'Request'} />
-      </View>
-      
+
+
+      <Menu />
+
+
     </View>
   )
 }
@@ -30,6 +48,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     flex: 1,
   },
+  block: {
+    height: Dimensions.get('window').height - 50
+  }
 })
 
 export default App
