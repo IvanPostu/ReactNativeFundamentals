@@ -1,6 +1,6 @@
 import React from 'react'
-import { View, StyleSheet, Text, StatusBar } from 'react-native'
-import { ThreePoints } from '@/components/CustomIcons/ThreePoints'
+import { View, StyleSheet } from 'react-native'
+
 
 export class Header extends React.Component {
   constructor(props) {
@@ -8,14 +8,14 @@ export class Header extends React.Component {
   }
 
   render() {
+    const { left, center, right } = this.props
     return (
       <View style={styles.container}>
-        <StatusBar hidden={true} />
+        
         <View style={styles.menuContainer}>
-          <View style={{ width: 40 }} />
-          <Text style={styles.text}>Home</Text>
-          
-          <ThreePoints />
+          {left}
+          {center}
+          {right}
         </View>
       </View>
     )
@@ -34,9 +34,5 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     flexDirection: 'row',
   },
-  text: {
-    fontWeight: 'bold',
-    fontSize: 22,
-    color: 'white',
-  },
+ 
 })

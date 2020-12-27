@@ -11,11 +11,11 @@ export class Menu extends React.Component {
     return (
       <View style={styles.container}>
         <View>
-          <MenuIcon iconType={'Home'} isGreen={true} width={28} height={31} />
+          <MenuIcon iconType={'Home'} isGreen={true} width={20} height={22} />
           
         </View>
         <View>
-          <MenuIcon iconType={'Notification'} redPoint={true} isGreen={false} width={24} height={32} />
+          <MenuIcon iconType={'Notification'} redPoint={true} isGreen={false} width={17} height={22} />
         </View>
         <TouchableOpacity>
           <View style={styles.centerButton}>
@@ -25,10 +25,10 @@ export class Menu extends React.Component {
           </View>
         </TouchableOpacity>
         <View>
-          <MenuIcon iconType={'Schedule'}  width={30} height={29} />
+          <MenuIcon iconType={'Schedule'}  width={21} height={20} />
         </View>
         <View>
-          <MenuIcon iconType={'Profile'}width={28} height={28} />
+          <MenuIcon iconType={'Profile'}width={18} height={18} />
         </View>
       </View>
 

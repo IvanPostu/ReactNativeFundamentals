@@ -22,7 +22,7 @@ export class MenuIcon extends React.Component {
     const width = this.props.width
     const height = this.props.height
     const isGreen = this.props.isGreen
-    const point =this.props.redPoint ? <Image source={redPoint} style={{position:'absolute', top:0, right:15}}/> : null
+    const point =this.props.redPoint ? <Image source={redPoint} style={{position:'absolute', top:0, right:17}}/> : null
     let icon
     switch (iconType) {
       case 'Home':
