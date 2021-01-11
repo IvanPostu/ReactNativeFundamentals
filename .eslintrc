@@ -1,13 +1,7 @@
 {
   "parser": "babel-eslint",
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:prettier/recommended"
-  ],
-  "plugins": [
-    "react"
-  ],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended"],
+  "plugins": ["react"],
   "parserOptions": {
     "sourceType": "module",
     "allowImportExportEverywhere": true
@@ -23,23 +17,20 @@
     }
   },
   "rules": {
-    "prettier/prettier": ["off"],
+    "prettier/prettier": ["warn"],
     "no-unused-vars": "warn",
     "no-console": "warn",
     "react/prop-types": "off"
   },
   "overrides": [
     {
-      "files": [
-        "**/*.test.js",
-        "**/*.test.jsx"
-      ],
+      "files": ["**/*.test.js", "**/*.test.jsx"],
       "env": {
         "jest": true
       }
     }
   ],
-  "globals":{
-    "BigInt":true
+  "globals": {
+    "BigInt": true
   }
 }

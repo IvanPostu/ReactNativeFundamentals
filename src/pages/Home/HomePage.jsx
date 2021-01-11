@@ -1,10 +1,10 @@
 import React from 'react'
-import { StyleSheet, View, Dimensions, ScrollView, Text,StatusBar } from 'react-native'
+import { StyleSheet, View, Dimensions, ScrollView, Text, StatusBar } from 'react-native'
 import { Menu } from '@/components/Menu/Menu'
 import { ButtonComponent } from '@/components/Button/ButtonComponent'
 import { Header } from '@/components/Header/Header'
 import { CustomTextInput } from '@/components/CustomTextInput/CustomTextInput'
-import {ThreePoints} from '@/components/CustomIcons/ThreePoints'
+import { ThreePoints } from '@/components/CustomIcons/ThreePoints'
 
 const HomePage = (props) => {
   function onTouchCallback() {
@@ -12,12 +12,25 @@ const HomePage = (props) => {
   }
   return (
     <View style={styles.container}>
-<StatusBar hidden={true} />
+      <StatusBar hidden={true} />
       <View style={styles.block}>
         <ScrollView>
-          <Header left={<View style={{ width:40}}/>} center={<Text style={styles.headerText}>Home</Text>} right={<View onTouchEnd={onTouchCallback}><ThreePoints/></View>} />
+          <Header
+            left={<View style={{ width: 40 }} />}
+            center={<Text style={styles.headerText}>Home</Text>}
+            right={
+              <View onTouchEnd={onTouchCallback}>
+                <ThreePoints />
+              </View>
+            }
+          />
           <View style={{ marginHorizontal: 40, marginVertical: 20 }}>
-            <ButtonComponent title={'VERY URGENT'} backgroundColor={'white'} textColor={'rgb(8,218,95)'} borderColor={'rgb(8,218,95)'} />
+            <ButtonComponent
+              title={'VERY URGENT'}
+              backgroundColor={'white'}
+              textColor={'rgb(8,218,95)'}
+              borderColor={'rgb(8,218,95)'}
+            />
           </View>
           <View style={{ marginHorizontal: 20 }}>
             <CustomTextInput title={'Name'} placeholder={'Your Name'} />
@@ -29,19 +42,19 @@ const HomePage = (props) => {
             <CustomTextInput title={'Location'} placeholder={'What is your location'} />
           </View>
           <View style={{ marginHorizontal: 20 }}>
-            <CustomTextInput title={'Description (Optional)'} height={90} placeholder={'Describe Here'} />
+            <CustomTextInput
+              title={'Description (Optional)'}
+              height={90}
+              placeholder={'Describe Here'}
+            />
           </View>
           <View style={{ marginHorizontal: 20, marginVertical: 25 }}>
             <ButtonComponent title={'Request'} />
-
           </View>
         </ScrollView>
       </View>
 
-
       <Menu />
-
-
     </View>
   )
 }
@@ -52,13 +65,13 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   block: {
-    height: Dimensions.get('window').height - 50
+    height: Dimensions.get('window').height - 50,
   },
   headerText: {
     color: 'white',
     fontSize: 24,
-    fontWeight: 'bold'
-  }
+    fontWeight: 'bold',
+  },
 })
 
 export default HomePage
