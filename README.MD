@@ -21,6 +21,8 @@ $ adb devices
 - Install React Native Tools extension
 - Execute the following script:
 ```bash
+$ npm i
+$ npx rnn-link
 $ npm run start -- --reset-cache
 $ npm run android
 $ adb shell input keyevent 82
