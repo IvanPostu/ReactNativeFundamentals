@@ -30,16 +30,16 @@
   "python.testing.pytestEnabled": true,
   "python.testing.unittestEnabled": false,
   "java.configuration.updateBuildConfiguration": "disabled",
-  "java.home": "/usr/lib/jvm/java-1.11.0-openjdk-amd64",
+  "java.home": "/usr/lib/jvm/java-11-openjdk",
   "java.configuration.runtimes": [
     {
       "default": true,
       "name": "JavaSE-1.8",
-      "path": "/usr/lib/jvm/java-1.8.0-openjdk-amd64"
+      "path": "/usr/lib/jvm/java-8-openjdk/"
     },
     {
       "name": "JavaSE-11",
-      "path": "/usr/lib/jvm/java-1.11.0-openjdk-amd64"
+      "path": "/usr/lib/jvm/java-11-openjdk/"
     }
   ],
   "editor.codeActionsOnSave": {

@@ -2,7 +2,6 @@ import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import { Navigation } from 'react-native-navigation'
 import BackgroudImageLayout from '@/components/BackgroundImageLayout/BackgroundImageLayout'
-import SafeAreaViewWrapper from '@/components/SafeAreaViewWrapper/SafeAreaViewWrapper'
 
 const GreetingScreen = (props) => {
   function onTouchCallback() {
@@ -14,13 +13,11 @@ const GreetingScreen = (props) => {
   }
 
   return (
-    <SafeAreaViewWrapper>
-      <BackgroudImageLayout style={styles.container}>
-        <View onTouchEnd={onTouchCallback} style={styles.textContainer}>
-          <Text style={styles.text}>Telemedicine</Text>
-        </View>
-      </BackgroudImageLayout>
-    </SafeAreaViewWrapper>
+    <BackgroudImageLayout style={styles.container}>
+      <View onTouchEnd={onTouchCallback} style={styles.textContainer}>
+        <Text style={styles.text}>Telemedicine</Text>
+      </View>
+    </BackgroudImageLayout>
   )
 }
 
